@@ -1,9 +1,10 @@
+import os
 import discord
 from discord.ext import commands, tasks
 import requests
 from datetime import datetime, timedelta
 
-TOKEN = "dummy-discord-token-for-tests"  # Remplacez par le token de votre bot
+TOKEN = os.environ["DISCORD_TOKEN"]  # set DISCORD_TOKEN before running the bot
 API_URL = "https://ent.cesi.fr/api/seance/all"
 CODE_PERSONNE = "2513459"  # Remplacez par le code personne approprié
 
